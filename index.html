@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="cs"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>HEALLO® 365 · Po roce se ti tělo promění</title>
+<meta name="description" content="HEALLO® 365 — roční doprovod pro ženu, která zkusila všechno. 12 měsíců, max 10 žen, start září 2026. Bez pravidel, bez diet… krok za krokem zpátky k sobě.">
+
+<!-- Favicon (inline SVG, žádný extra request) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='15' fill='%23a77b00'/><text x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-style='italic' fill='%23fdfaf3'>j</text></svg>">
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="HEALLO® 365 · Po roce se ti tělo promění">
+<meta property="og:description" content="HEALLO® 365 — 12 měsíců doprovodu pro ženu, která zkusila všechno. Max 10 žen, start září 2026. Bez pravidel, bez diet… krok za krokem zpátky k sobě.">
+<meta property="og:image" content="images/katerina-hero.jpg">
+<meta property="og:url" content="https://365.myheallo.cc">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="HEALLO®">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HEALLO® 365 · Po roce se ti tělo promění">
+<meta name="twitter:description" content="HEALLO® 365 · 12 měsíců · intuitivní stravování + somatika · max 10 žen · start září 2026">
+<meta name="twitter:image" content="images/katerina-hero.jpg">
+
+<meta name="theme-color" content="#a77b00">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --gold:#a77b00;
+  --gold-dark:#8a6500;
+  --gold-light:#e8d9a8;
+  --gold-bg:#faf3e0;
+  --cream:#fdfaf3;
+  --ivory:#ffffff;
+  --warm:#f8f4ec;
+  --rose:#d97757;
+  --rose-dark:#b85e3f;
+  --sage:#7a8c6e;
+  --ink:#1a1a1a;
+  --ink-soft:#3a3a3a;
+  --ink-mute:#6b6b6b;
+  --star:#f5a623;
+  --line:rgba(0,0,0,.08);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);line-height:1.6;background:var(--cream);-webkit-font-smoothing:antialiased;font-size:17px}
+img{max-width:100%;height:auto;display:block}
+svg{display:inline-block;vertical-align:middle}
+
+.wrap{max-width:960px;margin:0 auto;padding:80px 24px}
+.wrap-narrow{max-width:680px;margin:0 auto;padding:80px 24px}
+@media(max-width:600px){.wrap,.wrap-narrow{padding:56px 20px}}
+
+h1,h2,h3,h4{font-family:'Inter',sans-serif;font-weight:800;color:var(--ink);letter-spacing:-0.02em;line-height:1.15}
+h1{font-size:clamp(34px,5.5vw,58px);font-weight:900}
+h2{font-size:clamp(28px,4.2vw,42px);margin-bottom:18px;font-weight:800}
+h3{font-size:22px;margin-bottom:10px;font-weight:700}
+h4{font-size:18px;font-weight:700}
+p{margin-bottom:12px;color:var(--ink-soft);font-size:17px;line-height:1.65}
+a{color:var(--gold);text-decoration:none}
+
+.serif{font-family:'Fraunces',Georgia,serif;font-weight:500}
+
+/* DECORATIVE SVG */
+.deco-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto 20px;color:var(--gold);max-width:200px}
+.deco-divider::before,.deco-divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent)}
+.deco-divider svg{width:24px;height:24px;flex-shrink:0}
+
+/* ANNOUNCEMENT BAR */
+.countdown-bar{background:linear-gradient(90deg,var(--gold) 0%,var(--gold-dark) 100%);color:#fff;text-align:center;padding:14px 20px;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;position:sticky;top:0;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.1);letter-spacing:.5px}
+.countdown-bar-label{text-transform:uppercase;letter-spacing:1.5px;font-size:11px;font-weight:800}
+.countdown-timer{display:flex;gap:6px;font-variant-numeric:tabular-nums}
+.countdown-timer .unit{background:rgba(255,255,255,.2);padding:4px 8px;border-radius:4px;font-weight:800;min-width:34px;text-align:center}
+.countdown-timer .label-small{font-size:9px;opacity:.85;display:block;text-transform:uppercase;margin-top:1px;letter-spacing:1px}
+
+/* LOGO */
+.logo-bar{background:var(--ivory);padding:18px 24px;text-align:center;border-bottom:1px solid var(--line)}
+.logo{font-family:'Fraunces',serif;font-weight:500;font-size:26px;letter-spacing:-.015em;color:var(--gold);display:inline-flex;align-items:baseline;gap:6px;line-height:1}
+.logo em{font-style:italic;font-weight:400;color:var(--gold-dark)}
+.logo::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--gold);align-self:center;margin-right:6px}
+
+/* HERO */
+.hero{background:var(--ivory);text-align:center;padding:60px 24px 80px;position:relative;overflow:hidden}
+.hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:2}
+.hero-deco-left,.hero-deco-right{position:absolute;z-index:1;opacity:.85;filter:drop-shadow(0 4px 12px rgba(167,123,0,.08))}
+.hero-deco-left{top:60px;left:3%;width:200px;height:auto;transform:rotate(-15deg)}
+.hero-deco-right{top:40px;right:3%;width:220px;height:auto;transform:rotate(20deg)}
+@media(max-width:900px){.hero-deco-left,.hero-deco-right{display:none}}
+.hero-tagline{display:inline-block;background:var(--gold-bg);color:var(--gold-dark);font-size:12px;font-weight:800;padding:8px 18px;border-radius:100px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:24px}
+.hero h1{margin-bottom:18px}
+.hero h1 .highlight{font-family:'Fraunces',serif;font-style:italic;font-weight:500;color:var(--gold)}
+.hero-sub{font-size:20px;color:var(--ink-soft);max-width:600px;margin:0 auto 28px;line-height:1.55;font-weight:500}
+.hero-rating{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:32px;font-size:14px;color:var(--ink-mute);font-weight:600}
+.stars{color:var(--star);font-size:18px;letter-spacing:1px}
+
+/* HERO PHOTO */
+.hero-photo-wrap{position:relative;width:280px;margin:0 auto 36px}
+.hero-photo{aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,var(--gold-bg),var(--warm));overflow:hidden;border:6px solid #fff;box-shadow:0 20px 60px rgba(167,123,0,.2);display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--gold);text-align:center;padding:24px;position:relative;z-index:2}
+.photo-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit;z-index:5;background:#fff}
+.photo-brief{font-size:11px;color:var(--gold-dark);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.photo-desc{font-size:13px;color:var(--ink-mute);font-weight:500;line-height:1.4;font-family:'Inter',sans-serif}
+.hero-photo-ring{position:absolute;inset:-24px;border:1.5px dashed var(--gold-light);border-radius:50%;z-index:1;animation:rotate-ring 60s linear infinite}
+@keyframes rotate-ring{to{transform:rotate(360deg)}}
+.hero-photo-leaf{position:absolute;color:var(--gold);z-index:3}
+.hero-photo-leaf-1{top:-10px;right:-20px;width:60px;transform:rotate(30deg)}
+.hero-photo-leaf-2{bottom:0;left:-30px;width:50px;transform:rotate(-40deg)}
+
+/* BTN */
+.btn{display:inline-block;background:var(--gold);color:#fff;font-size:17px;font-weight:800;padding:18px 38px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;transition:all .2s ease;letter-spacing:.01em;font-family:'Inter',sans-serif;box-shadow:0 4px 14px rgba(167,123,0,.3)}
+.btn:hover{background:var(--gold-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(167,123,0,.4)}
+.btn-lg{font-size:18px;padding:20px 48px}
+.btn-rose{background:var(--rose)}
+.btn-rose:hover{background:var(--rose-dark)}
+.btn-link{color:var(--gold);font-size:15px;text-decoration:underline;font-weight:600}
+.micro{font-size:13px;color:var(--ink-mute);margin-top:14px}
+
+/* PRESS BAR */
+.press-bar{background:var(--warm);padding:32px 24px;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.press-label{font-size:11px;font-weight:700;color:var(--ink-mute);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px}
+.press-logos{display:flex;align-items:center;justify-content:center;gap:36px;flex-wrap:wrap;max-width:760px;margin:0 auto;opacity:.6}
+.press-logo{font-family:'Fraunces',serif;font-size:18px;font-weight:500;color:var(--ink-soft);letter-spacing:.02em;font-style:italic}
+.press-logo.bold{font-family:'Inter',sans-serif;font-weight:900;font-style:normal;letter-spacing:-.02em}
+.press-logo.upper{text-transform:uppercase;letter-spacing:3px;font-weight:700;font-size:14px;font-style:normal;font-family:'Inter',sans-serif}
+
+/* TRUST BAR */
+.trust-bar{background:var(--ivory);padding:32px 24px;text-align:center}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:760px;margin:0 auto}
+@media(min-width:700px){.trust-grid{grid-template-columns:repeat(4,1fr)}}
+.trust-item{font-size:12px;color:var(--ink-mute);font-weight:500;display:flex;flex-direction:column;align-items:center;gap:6px;letter-spacing:.3px;text-transform:uppercase}
+.trust-item svg{width:28px;height:28px;color:var(--gold);margin-bottom:6px}
+.trust-item strong{display:block;font-size:16px;color:var(--ink);font-weight:700;font-family:'Inter',sans-serif;line-height:1.2;text-transform:none;letter-spacing:-.01em;margin-bottom:2px}
+
+/* SECTION HEADER */
+.section-eyebrow{display:inline-block;background:var(--gold-bg);color:var(--gold-dark);font-size:11px;font-weight:800;padding:6px 14px;border-radius:100px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.section-head{text-align:center;max-width:680px;margin:0 auto 48px}
+.section-head h2 .serif-em{font-family:'Fraunces',serif;font-style:italic;font-weight:400;color:var(--gold)}
+
+/* PROBLEM */
+.problem-section{background:var(--cream);text-align:center;position:relative;overflow:hidden}
+.problem-illustration{width:160px;margin:0 auto 32px;color:var(--rose);opacity:.7}
+.problem-list{max-width:580px;margin:32px auto 0;text-align:left}
+.problem-list li{padding:14px 0;font-size:17px;color:var(--ink-soft);padding-left:40px;position:relative;list-style:none;line-height:1.55;border-bottom:1px solid var(--line)}
+.problem-list li:last-child{border-bottom:none}
+.problem-list li::before{content:'';position:absolute;left:0;top:14px;width:26px;height:26px;background:rgba(217,119,87,.12);border-radius:50%}
+.problem-list li::after{content:'';position:absolute;left:8px;top:24px;width:10px;height:2px;background:var(--rose);border-radius:2px}
+
+/* ABOUT */
+.about-section{background:var(--warm);position:relative;overflow:hidden}
+.about-deco{position:absolute;opacity:.7;z-index:1;filter:drop-shadow(0 4px 12px rgba(167,123,0,.08))}
+.about-deco-1{top:40px;right:5%;width:170px;height:auto;transform:rotate(15deg)}
+.about-deco-2{bottom:60px;left:5%;width:120px;height:auto;transform:rotate(-25deg);color:var(--gold-light);opacity:.4}
+@media(max-width:900px){.about-deco{display:none}}
+.about-inner{position:relative;z-index:2;max-width:880px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+@media(min-width:780px){.about-inner{grid-template-columns:340px 1fr;gap:60px}}
+.about-photo{aspect-ratio:4/5;border-radius:16px;background:linear-gradient(135deg,var(--gold-bg),var(--warm));display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--gold);text-align:center;padding:32px;border:4px solid #fff;box-shadow:0 16px 50px rgba(167,123,0,.15);position:relative;overflow:hidden}
+.about-content h2{text-align:left}
+.about-content .section-eyebrow{margin-bottom:14px}
+.about-content p{font-size:16px;line-height:1.75;margin-bottom:12px}
+.about-quote{font-family:'Fraunces',serif;font-weight:500;font-size:24px;font-style:italic;color:var(--gold);text-align:center;line-height:1.45;padding:32px 28px;margin:48px auto 0;background:#fff;border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.04);max-width:680px;position:relative}
+.about-quote::before{content:'';position:absolute;left:30px;top:-12px;width:30px;height:30px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.quote-mark{font-family:'Fraunces',serif;font-size:80px;color:var(--gold);line-height:0;display:inline-block;vertical-align:-20px;margin-right:4px;opacity:.3;font-style:normal}
+
+/* NL CALLOUT */
+.nl-callout{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;background:#fff;border:2px solid var(--gold-light);border-radius:14px;padding:28px;margin:24px auto 0;max-width:680px;box-shadow:0 8px 28px rgba(167,123,0,.08);position:relative}
+.nl-stamp{width:72px;height:72px;border:2px solid var(--gold);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--gold);background:var(--gold-bg);flex-shrink:0;text-align:center}
+.nl-stamp .nl-letters{font-family:'Fraunces',serif;font-weight:600;font-size:22px;letter-spacing:.5px;line-height:1}
+.nl-stamp .nl-label{font-size:8px;font-weight:800;letter-spacing:1.2px;margin-top:3px;text-transform:uppercase;opacity:.8}
+.nl-callout-text strong.nl-eyebrow{display:block;font-size:12px;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:1.8px;margin-bottom:6px}
+.nl-callout-text h4{font-size:18px;color:var(--ink);margin-bottom:8px;font-weight:700}
+.nl-callout-text p{margin:0;font-size:15px;color:var(--ink-soft);line-height:1.65}
+@media(max-width:600px){
+  .nl-callout{grid-template-columns:1fr;text-align:center;padding:24px 20px;gap:16px}
+  .nl-stamp{margin:0 auto}
+}
+
+/* VALUE CARDS */
+.value-section{background:var(--ivory);text-align:center}
+.value-grid{display:grid;gap:16px;max-width:760px;margin:0 auto;text-align:left;grid-template-columns:1fr}
+@media(min-width:700px){.value-grid{grid-template-columns:1fr 1fr;gap:18px}}
+.value-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:28px;transition:all .25s ease;display:flex;flex-direction:column;gap:14px;position:relative}
+.value-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 12px 30px rgba(167,123,0,.08)}
+.value-icon-wrap{width:56px;height:56px;background:var(--gold-bg);color:var(--gold);border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.value-icon-wrap svg{width:30px;height:30px}
+.value-card strong{display:block;font-size:18px;color:var(--ink);font-weight:700}
+.value-card p{margin:0;font-size:15px;color:var(--ink-mute);line-height:1.6}
+.value-price{font-size:14px;color:var(--ink-mute);text-decoration:line-through;font-weight:600;align-self:flex-start;background:var(--warm);padding:4px 10px;border-radius:6px}
+.value-card.bonus{background:linear-gradient(135deg,#fff,var(--gold-bg));border-color:var(--gold-light)}
+.value-card.bonus::before{content:'BONUS ZDARMA';position:absolute;top:-12px;left:24px;background:var(--rose);color:#fff;font-size:10px;font-weight:800;padding:5px 12px;border-radius:100px;letter-spacing:1.5px}
+.value-card.bonus .value-icon-wrap{background:var(--rose);color:#fff}
+
+.value-total-wrap{position:relative;margin-top:90px;max-width:760px;margin-left:auto;margin-right:auto}
+.total-herb{position:absolute;top:-85px;left:50%;transform:translateX(-50%);width:110px;height:auto;opacity:.95;z-index:5;filter:drop-shadow(0 6px 18px rgba(167,123,0,.18));pointer-events:none}
+@media(max-width:600px){.total-herb{top:-65px;width:80px}.value-total-wrap{margin-top:70px}}
+.value-total{background:var(--ink);color:#fff;padding:40px 32px;border-radius:16px;text-align:center;position:relative;overflow:hidden}
+.value-total::before{content:'';position:absolute;top:-50%;right:-10%;width:50%;height:200%;background:radial-gradient(circle,rgba(232,217,168,.15),transparent 70%)}
+.value-total > *{position:relative;z-index:2}
+.value-total .total-label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:10px;font-weight:700}
+.value-total .original{font-size:22px;color:rgba(255,255,255,.5);text-decoration:line-through;margin-bottom:4px;font-weight:600}
+.value-total .now{font-size:64px;font-weight:900;color:var(--gold-light);line-height:1;letter-spacing:-.02em;font-family:'Inter',sans-serif}
+.value-total .now-label{font-size:14px;color:rgba(255,255,255,.7);margin-top:10px}
+
+/* SUBSTACK PREVIEW */
+.substack-preview-section{background:var(--warm);text-align:center}
+.substack-preview{max-width:520px;margin:32px auto 0;background:#fff;border-radius:18px;box-shadow:0 16px 50px rgba(0,0,0,.08);overflow:hidden;text-align:left;position:relative}
+.substack-banner{height:130px;background:linear-gradient(135deg,var(--gold) 0%,var(--rose) 100%);position:relative;display:flex;align-items:center;justify-content:center}
+.substack-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.2),transparent 50%)}
+.substack-banner-text{color:#fff;font-family:'Fraunces',serif;font-style:italic;font-size:32px;font-weight:500;letter-spacing:-.02em;z-index:2}
+.substack-body{padding:28px;position:relative}
+.substack-avatar{width:64px;height:64px;border-radius:50%;background:#fff;border:4px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.1);position:absolute;top:-32px;left:28px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:900;font-size:22px;font-family:'Fraunces',serif}
+.substack-meta{margin-top:36px;font-size:12px;color:var(--ink-mute);font-weight:600;text-transform:uppercase;letter-spacing:1.5px}
+.substack-title{font-family:'Fraunces',serif;font-size:24px;font-weight:600;color:var(--ink);margin:6px 0 12px;line-height:1.2}
+.substack-desc{font-size:14px;color:var(--ink-mute);margin-bottom:18px;line-height:1.55}
+.substack-subscribe{background:var(--ink);color:#fff;font-size:13px;font-weight:700;padding:10px 18px;border-radius:6px;display:inline-block}
+.substack-articles{border-top:1px solid var(--line);padding:18px 28px;background:var(--warm)}
+.substack-article{padding:8px 0;font-size:13px;color:var(--ink-soft);display:flex;justify-content:space-between;gap:14px}
+.substack-article strong{font-weight:600;color:var(--ink);font-size:14px}
+.substack-article-date{color:var(--ink-mute);font-size:12px;white-space:nowrap}
+.substack-tag{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.95);color:var(--gold);font-size:10px;font-weight:800;padding:5px 10px;border-radius:100px;letter-spacing:1px;text-transform:uppercase;z-index:3}
+
+/* 12 MONTHS JOURNEY */
+.journey-section{background:var(--ivory)}
+.journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:780px;margin:32px auto 0}
+@media(min-width:600px){.journey-grid{grid-template-columns:repeat(4,1fr);gap:16px}}
+@media(min-width:800px){.journey-grid{grid-template-columns:repeat(6,1fr)}}
+.journey-month{background:var(--warm);border-radius:12px;padding:18px 10px;text-align:center;border:2px solid transparent;transition:all .25s;font-size:13px;color:var(--ink-soft)}
+.journey-month:hover{border-color:var(--gold-light);background:#fff;transform:translateY(-3px)}
+.journey-month .month-num{font-family:'Fraunces',serif;font-size:32px;font-weight:600;color:var(--gold);line-height:1;display:block;margin-bottom:6px;font-style:italic}
+.journey-month .month-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--ink-mute);display:block;margin-bottom:6px}
+.journey-month .month-title{font-size:13px;font-weight:600;color:var(--ink);line-height:1.3}
+.journey-month.highlight{background:var(--gold-bg);border-color:var(--gold-light)}
+.journey-month.highlight .month-title{color:var(--gold-dark)}
+
+/* FOR-WHOM */
+.forwhom-section{background:var(--warm)}
+.forwhom-grid{display:grid;grid-template-columns:1fr;gap:20px;max-width:760px;margin:0 auto}
+@media(min-width:700px){.forwhom-grid{grid-template-columns:1fr 1fr;gap:24px}}
+.forwhom-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:32px;position:relative}
+.forwhom-icon{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.forwhom-card.yes .forwhom-icon{background:var(--gold-bg);color:var(--gold)}
+.forwhom-card.no .forwhom-icon{background:rgba(217,119,87,.12);color:var(--rose)}
+.forwhom-icon svg{width:24px;height:24px}
+.forwhom-card.yes{border-color:var(--gold-light)}
+.forwhom-card.no{border-color:rgba(217,119,87,.25)}
+.forwhom-card h3{font-size:20px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.forwhom-card.yes h3{color:var(--gold)}
+.forwhom-card.no h3{color:var(--rose)}
+.forwhom-card ul{list-style:none;padding:0}
+.forwhom-card li{padding:8px 0 8px 32px;font-size:15px;color:var(--ink-soft);position:relative;line-height:1.55}
+.forwhom-card.yes li::before{content:'';position:absolute;left:0;top:8px;width:22px;height:22px;background:rgba(167,123,0,.12);border-radius:50%}
+.forwhom-card.yes li::after{content:'';position:absolute;left:6px;top:15px;width:6px;height:10px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(45deg)}
+.forwhom-card.no li::before{content:'';position:absolute;left:0;top:8px;width:22px;height:22px;background:rgba(217,119,87,.12);border-radius:50%}
+.forwhom-card.no li::after{content:'';position:absolute;left:6px;top:14px;width:10px;height:2px;background:var(--rose);border-radius:2px}
+
+/* PATH */
+.path-section{background:var(--ivory);position:relative;overflow:hidden}
+.path-grid{display:grid;gap:24px;max-width:780px;margin:0 auto}
+@media(min-width:780px){.path-grid{grid-template-columns:1fr 1fr 1fr;gap:24px}}
+.path-card{background:#fff;border:2px solid var(--line);border-radius:16px;padding:32px 24px;text-align:center;transition:all .25s;position:relative}
+.path-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 16px 40px rgba(167,123,0,.1)}
+.path-illustration{width:80px;height:80px;margin:0 auto 18px;background:var(--gold-bg);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold)}
+.path-illustration svg{width:44px;height:44px}
+.path-num{position:absolute;top:16px;right:20px;font-family:'Fraunces',serif;font-style:italic;font-size:28px;color:var(--gold);font-weight:500;opacity:.4}
+.path-card h3{font-size:18px;margin-bottom:10px}
+.path-card .month-tag{font-size:11px;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;display:block}
+.path-card p{font-size:14px;color:var(--ink-soft);margin:0;line-height:1.65}
+
+/* REFERENCE */
+.ref-section{background:var(--warm)}
+.ref-grid{display:grid;gap:24px;max-width:760px;margin:0 auto;grid-template-columns:1fr}
+@media(min-width:700px){.ref-grid{grid-template-columns:1fr 1fr}}
+.ref-card{background:#fff;border-radius:16px;padding:32px;box-shadow:0 4px 20px rgba(0,0,0,.04);position:relative;display:flex;flex-direction:column;gap:14px}
+.ref-header{display:flex;align-items:center;gap:14px;margin-bottom:6px}
+.ref-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold-bg),var(--warm));display:flex;align-items:center;justify-content:center;color:var(--gold);font-weight:800;font-size:18px;font-family:'Fraunces',serif;flex-shrink:0;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.ref-name{font-weight:700;color:var(--ink);font-size:15px;line-height:1.2}
+.ref-name .anon{font-size:11px;color:var(--ink-mute);font-weight:500;display:block;margin-top:2px;text-transform:uppercase;letter-spacing:1px}
+.ref-card .stars{font-size:14px}
+.ref-card .ref-story{font-size:14px;color:var(--ink-soft);margin:0;line-height:1.7}
+.ref-card .ref-result{font-size:14px;color:var(--ink-soft);margin:0;line-height:1.7;padding:14px;background:var(--warm);border-radius:8px}
+.ref-card .ref-result strong{color:var(--gold);font-weight:700;display:block;margin-bottom:4px;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.ref-card .ref-quote{font-family:'Fraunces',serif;font-size:18px;font-style:italic;color:var(--ink);line-height:1.5;padding:18px 20px;background:var(--gold-bg);border-radius:10px;border-left:3px solid var(--gold);font-weight:500;position:relative}
+
+/* PRICING */
+.pricing-section{background:linear-gradient(180deg,var(--gold-bg) 0%,var(--cream) 100%);text-align:center;padding:80px 24px;position:relative;overflow:hidden}
+.pricing-deco{position:absolute;opacity:.6;z-index:1;filter:drop-shadow(0 4px 12px rgba(167,123,0,.08))}
+.pricing-deco-1{top:40px;left:4%;width:180px;height:auto;transform:rotate(-15deg)}
+.pricing-deco-2{bottom:40px;right:4%;width:200px;height:auto;transform:rotate(20deg)}
+@media(max-width:900px){.pricing-deco{display:none}}
+.pricing-inner{max-width:560px;margin:0 auto;position:relative;z-index:2}
+.pricing-card{background:#fff;border-radius:22px;padding:48px 36px;margin:60px 0 32px;box-shadow:0 20px 60px rgba(167,123,0,.15);border:3px solid var(--gold);position:relative;overflow:visible}
+.card-herb{position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:90px;height:auto;opacity:.95;z-index:3;filter:drop-shadow(0 6px 14px rgba(167,123,0,.15));pointer-events:none}
+@media(max-width:600px){.card-herb{top:-64px;width:70px}}
+.pricing-card .price-old{font-size:22px;color:var(--ink-mute);text-decoration:line-through;margin-bottom:4px;font-weight:600}
+.pricing-card .price-now{font-size:88px;font-weight:900;color:var(--gold);line-height:1;letter-spacing:-0.03em;margin:6px 0;font-family:'Inter',sans-serif}
+.pricing-card .price-label{font-size:14px;color:var(--ink-mute);letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:24px}
+.pricing-card .save-badge{display:inline-block;background:var(--rose);color:#fff;font-size:12px;font-weight:800;padding:6px 14px;border-radius:100px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.pricing-card .price-note{font-size:13px;color:var(--ink-mute);margin-top:18px;font-style:italic}
+
+/* PRACTICAL SECTION */
+.practical-section{background:var(--ivory);text-align:center}
+.practical-grid{display:grid;grid-template-columns:1fr;gap:16px;max-width:880px;margin:0 auto}
+@media(min-width:600px){.practical-grid{grid-template-columns:repeat(2,1fr);gap:18px}}
+@media(min-width:900px){.practical-grid{grid-template-columns:repeat(4,1fr)}}
+.practical-card{background:#fff;border:2px solid var(--line);border-radius:14px;padding:32px 22px;text-align:center;transition:all .25s;display:flex;flex-direction:column;align-items:center}
+.practical-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 12px 30px rgba(167,123,0,.08)}
+.practical-card.featured{background:linear-gradient(135deg,#fff,var(--gold-bg));border-color:var(--gold-light)}
+.practical-num{font-family:'Fraunces',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1;display:block;margin-bottom:12px;font-style:italic;letter-spacing:-.02em}
+.practical-num.small{font-size:30px}
+.practical-card strong{font-size:15px;color:var(--ink);font-weight:700;display:block;margin-bottom:8px;letter-spacing:.2px}
+.practical-card p{font-size:13px;color:var(--ink-mute);margin:0 0 14px;line-height:1.55;flex:1}
+.practical-card .practical-cta{display:inline-block;background:var(--gold);color:#fff;font-size:12px;font-weight:700;padding:8px 14px;border-radius:6px;text-decoration:none;letter-spacing:.3px;transition:background .2s;margin-top:auto}
+.practical-card .practical-cta:hover{background:var(--gold-dark)}
+
+/* GUARANTEE */
+.guarantee{background:#fff;border:2px solid var(--gold-light);border-radius:14px;padding:36px;text-align:center;max-width:560px;margin:40px auto 0;display:flex;flex-direction:column;align-items:center;gap:16px}
+.guarantee-shield{width:90px;height:100px;display:flex;align-items:center;justify-content:center}
+.guarantee h3{font-size:20px;margin:0}
+.guarantee p{font-size:15px;color:var(--ink-soft);margin:0;line-height:1.6;max-width:420px}
+
+/* FAQ */
+.faq-section{background:var(--ivory)}
+.faq-container{max-width:680px;margin:0 auto}
+.faq-item{background:#fff;border:2px solid var(--line);border-radius:12px;margin-bottom:12px;transition:border-color .25s}
+.faq-item[open]{border-color:var(--gold)}
+.faq-item summary{font-weight:700;font-size:17px;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;padding:22px 26px;user-select:none;gap:16px}
+.faq-item summary::after{content:'+';font-size:24px;color:var(--gold);font-weight:600;transition:transform .25s ease;flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--gold-bg);display:flex;align-items:center;justify-content:center;line-height:1}
+.faq-item[open] summary::after{transform:rotate(45deg);background:var(--gold);color:#fff}
+.faq-item p{font-size:15px;color:var(--ink-soft);padding:0 26px 24px;line-height:1.7}
+
+/* ALTERNATIVES */
+.alt-section{background:var(--warm);padding:80px 24px;border-top:1px solid var(--line)}
+.alt-grid{display:grid;grid-template-columns:1fr;gap:20px;max-width:980px;margin:32px auto 0}
+@media(min-width:780px){.alt-grid{grid-template-columns:repeat(3,1fr);gap:24px}}
+.alt-card{background:#fff;border:2px solid var(--line);border-radius:16px;padding:32px 28px;text-decoration:none;color:inherit;transition:all .25s;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
+.alt-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 16px 40px rgba(167,123,0,.12)}
+.alt-card:hover .alt-arrow{transform:translate(4px,-4px)}
+.alt-tag{display:inline-block;background:var(--gold-bg);color:var(--gold-dark);font-size:11px;font-weight:800;padding:5px 12px;border-radius:100px;letter-spacing:1.5px;text-transform:uppercase;align-self:flex-start}
+.alt-card h3{font-size:24px;margin:0;font-family:'Fraunces',serif;font-weight:600;font-style:italic;color:var(--ink);line-height:1.2}
+.alt-card p{font-size:14px;color:var(--ink-soft);margin:0;line-height:1.65;flex:1}
+.alt-meta{font-size:12px;color:var(--ink-mute);font-weight:700;letter-spacing:.5px;border-top:1px solid var(--line);padding-top:14px;margin-top:6px;text-transform:uppercase}
+.alt-arrow{position:absolute;top:28px;right:28px;color:var(--gold);font-size:24px;font-weight:700;transition:transform .25s ease;line-height:1}
+
+/* FINAL CTA */
+.final-cta{background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dark) 100%);color:#fff;text-align:center;padding:90px 24px;position:relative;overflow:hidden}
+.final-cta::before{content:'';position:absolute;top:-50%;right:-10%;width:50%;height:200%;background:radial-gradient(circle,rgba(255,255,255,.1),transparent 60%);pointer-events:none}
+.final-cta-deco{position:absolute;opacity:.5;z-index:1;mix-blend-mode:soft-light}
+.final-cta-deco-1{top:40px;left:4%;width:150px;height:auto;transform:rotate(-20deg)}
+.final-cta-deco-2{bottom:40px;right:4%;width:170px;height:auto;transform:rotate(15deg)}
+@media(max-width:900px){.final-cta-deco{display:none}}
+.final-cta > div{position:relative;z-index:2}
+.final-cta h2{color:#fff;max-width:640px;margin:0 auto 18px}
+.final-cta .lead{font-size:18px;color:rgba(255,255,255,.92);max-width:540px;margin:0 auto 32px}
+.final-cta .btn{background:#fff;color:var(--gold);box-shadow:0 8px 24px rgba(0,0,0,.15)}
+.final-cta .btn:hover{background:var(--ink);color:#fff}
+.final-cta .micro{color:rgba(255,255,255,.7)}
+.final-cta .section-eyebrow{background:rgba(255,255,255,.2);color:#fff}
+
+/* STICKY */
+.cookie-banner{position:fixed;bottom:24px;left:24px;right:24px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;display:flex;flex-direction:column;gap:14px;z-index:99;box-shadow:0 16px 40px rgba(0,0,0,.12);max-width:520px;margin:0 auto;font-size:13px;color:var(--ink-soft);line-height:1.5;animation:slide-up .4s cubic-bezier(.2,.8,.2,1) .6s both}
+@media(min-width:600px){.cookie-banner{flex-direction:row;align-items:center;gap:18px}}
+@keyframes slide-up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.cookie-banner p{margin:0;font-size:13px;color:var(--ink-soft);flex:1}
+.cookie-banner a{color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+.cookie-accept{background:var(--gold);color:#fff;border:none;padding:10px 22px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;white-space:nowrap;transition:background .2s}
+.cookie-accept:hover{background:var(--gold-dark)}
+.cookie-banner.hidden{display:none}
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;background:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:center;gap:18px;z-index:98;box-shadow:0 -4px 24px rgba(0,0,0,.1);transform:translateY(100%);transition:transform .35s ease;border-top:1px solid var(--line)}
+.sticky-cta.visible{transform:translateY(0)}
+.sticky-cta-text{color:var(--ink);font-size:14px;font-weight:700;display:none}
+.sticky-cta .btn{padding:11px 24px;font-size:14px;box-shadow:none}
+@media(min-width:700px){.sticky-cta-text{display:block}}
+
+.footer-pro{background:var(--ivory);border-top:1px solid var(--line);padding:56px 24px 24px}
+.footer-inner{max-width:880px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid var(--line)}
+@media(min-width:600px){.footer-inner{grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px}}
+.footer-col p.footer-brand{font-family:'Fraunces',serif;font-size:24px;font-weight:500;color:var(--gold);letter-spacing:-.015em;margin-bottom:6px;line-height:1}
+.footer-col p.footer-brand em{font-style:italic;font-weight:400;color:var(--gold-dark)}
+.footer-col p.footer-tagline{font-size:13px;color:var(--ink-mute);margin:0;line-height:1.5}
+.footer-col .footer-label{font-size:11px;font-weight:700;color:var(--ink);letter-spacing:1.8px;text-transform:uppercase;margin-bottom:14px;margin-top:0}
+.footer-col a{display:block;font-size:14px;color:var(--ink-soft);text-decoration:none;padding:5px 0;transition:color .2s;line-height:1.4}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{max-width:880px;margin:0 auto;padding-top:24px;display:flex;flex-direction:column;gap:8px;align-items:center;font-size:12px;color:var(--ink-mute);text-align:center;line-height:1.6}
+@media(min-width:600px){.footer-bottom{flex-direction:row;justify-content:space-between;text-align:left}}
+.footer-bottom p{margin:0;font-size:12px;color:var(--ink-mute)}
+.footer-bottom .footer-legal{display:flex;gap:18px;flex-wrap:wrap;justify-content:center}
+.footer-bottom .footer-legal a{color:var(--ink-mute);text-decoration:underline;text-underline-offset:3px}
+.footer-bottom .footer-legal a:hover{color:var(--gold)}
+
+@media(max-width:600px){
+  body{font-size:16px}
+  .hero{padding:40px 20px 60px}
+  .hero-photo-wrap{width:240px}
+  .countdown-bar{padding:10px 16px;font-size:12px;flex-direction:column;gap:8px}
+  .pricing-card{padding:36px 24px}
+  .pricing-card .price-now{font-size:68px}
+  .final-cta{padding:60px 20px}
+  .btn{padding:16px 28px;font-size:15px;width:100%;text-align:center;display:block}
+  .btn-lg{font-size:16px;padding:18px 32px}
+  .ref-card,.forwhom-card,.path-card,.value-card{padding:24px}
+  .substack-preview{margin:24px auto 0}
+  .about-photo{aspect-ratio:1;max-width:280px;margin:0 auto}
+}
+
+/* PILÍŘE SEKCE 3-5 */
+.pilar-section{padding:90px 24px;position:relative;overflow:hidden}
+.pilar-section.bg-warm{background:var(--warm)}
+.pilar-section.bg-cream{background:var(--cream)}
+.pilar-section.bg-ivory{background:var(--ivory)}
+.pilar-section .section-head{margin-bottom:36px}
+.pilar-body{max-width:680px;margin:0 auto}
+.pilar-body p{font-size:18px;line-height:1.75;margin-bottom:18px;color:var(--ink-soft)}
+.pilar-body p.lead{font-size:20px;line-height:1.6}
+.pilar-body p strong{color:var(--ink);font-weight:700}
+.pilar-list{list-style:none;padding:24px 28px;margin:28px 0;background:#fff;border-radius:12px;border-left:4px solid var(--gold);box-shadow:0 4px 20px rgba(0,0,0,.04)}
+.pilar-list li{padding:8px 0;font-size:17px;color:var(--ink-soft);line-height:1.55}
+.pilar-list li em{font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-weight:500;font-size:1.05em}
+.pilar-closing{font-family:'Fraunces',serif;font-style:italic;font-size:22px;color:var(--gold-dark);line-height:1.5;text-align:center;padding:32px 24px 0;margin-top:24px;border-top:1px solid var(--gold-light);font-weight:500}
+.pilar-closing.left{text-align:left}
+.pilar-highlight{background:var(--ink);color:#fff;padding:32px;border-radius:14px;margin:32px 0;text-align:center}
+.pilar-highlight strong{font-size:32px;color:var(--gold-light);display:block;margin-bottom:8px;font-weight:900;letter-spacing:-.02em}
+.pilar-highlight p{color:rgba(255,255,255,.85);font-size:15px;margin:0;line-height:1.6}
+
+/* KOMUNITA SEKCE 9 */
+.komunita-section{background:var(--warm);padding:80px 24px}
+.komunita-body{max-width:680px;margin:0 auto}
+.komunita-body p{font-size:17px;line-height:1.7;margin-bottom:14px;color:var(--ink-soft)}
+.komunita-list{background:#fff;border-radius:14px;padding:28px 32px;margin:28px 0;list-style:none;border-left:4px solid var(--gold);box-shadow:0 4px 20px rgba(0,0,0,.04)}
+.komunita-list-title{font-weight:800;color:var(--ink);font-size:15px;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px;display:block}
+.komunita-list li{padding:6px 0;font-size:16px;color:var(--ink-soft);position:relative;padding-left:22px;line-height:1.6}
+.komunita-list li::before{content:'·';position:absolute;left:8px;color:var(--gold);font-weight:900;font-size:20px;line-height:1;top:6px}
+
+/* TĚLO SEKCE 10 */
+.body-section{background:var(--ivory);padding:80px 24px;text-align:center}
+.body-section .body-inner{max-width:680px;margin:0 auto;text-align:left}
+.body-section p{font-size:17px;line-height:1.75;margin-bottom:16px;color:var(--ink-soft)}
+.body-section p.body-strong{font-weight:700;color:var(--ink);text-align:center;font-size:18px;margin:28px 0 14px}
+.body-section em.body-em{font-family:'Fraunces',serif;font-style:italic;color:var(--gold-dark);font-weight:500}
+.body-markers{background:var(--warm);border-radius:14px;padding:24px 28px;margin:28px 0;list-style:none}
+.body-markers li{padding:10px 0;font-size:16px;color:var(--ink-soft);padding-left:28px;position:relative;border-bottom:1px solid rgba(0,0,0,.06);line-height:1.5}
+.body-markers li:last-child{border-bottom:none}
+.body-markers li::before{content:'·';position:absolute;left:12px;color:var(--gold);font-size:24px;line-height:1;top:8px}
+.body-section .pilar-closing{margin-top:32px}
+
+/* OFFER LIST SEKCE 7 (alt to value-grid) */
+.offer-list{max-width:680px;margin:0 auto;list-style:none;padding:0}
+.offer-list li{padding:22px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:48px 1fr;gap:18px;align-items:start}
+.offer-list li:last-child{border-bottom:none}
+.offer-list li strong{font-size:17px;color:var(--ink);font-weight:700;display:block;margin-bottom:6px;line-height:1.3}
+.offer-list li p{font-size:15px;color:var(--ink-mute);margin:0;line-height:1.6}
+.offer-list .offer-num{font-family:'Fraunces',serif;font-style:italic;font-size:26px;color:var(--gold);font-weight:500;line-height:1.2}
+
+/* PILLAR HERO TAG */
+.pilar-tag{display:inline-block;font-size:11px;font-weight:800;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:8px}
+
+/* REF SECTION CUSTOM */
+.ref-section{padding:80px 24px}
+.ref-section .ref-grid{grid-template-columns:1fr;max-width:680px}
+
+/* VIDEO EMBED */
+.video-wrap{max-width:760px;margin:0 auto 56px;position:relative}
+.video-eyebrow{text-align:center;font-size:12px;font-weight:800;color:var(--gold);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:18px}
+.video-player{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;cursor:pointer;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.2);transition:transform .3s ease}
+.video-player:hover{transform:translateY(-4px);box-shadow:0 24px 70px rgba(0,0,0,.28)}
+.video-player:hover .play-button{transform:translate(-50%,-50%) scale(1.08)}
+.video-player img.video-poster{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .3s}
+.video-player iframe{width:100%;height:100%;border:0;display:block}
+.play-button{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:84px;height:84px;transition:transform .3s ease;filter:drop-shadow(0 6px 16px rgba(0,0,0,.5));pointer-events:none}
+.play-button svg{width:100%;height:100%}
+.video-caption{text-align:center;font-size:14px;color:var(--ink-mute);margin-top:14px;font-style:italic}
+</style></head><body>
+
+<!-- SVG SYMBOLS -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- WHEAT BRANCH -->
+    <symbol id="i-wheat" viewBox="0 0 60 100">
+      <line x1="30" y1="98" x2="30" y2="22" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      <g stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round">
+        <path d="M30 28 Q22 24 18 30"/><path d="M30 28 Q38 24 42 30"/>
+        <path d="M30 40 Q22 36 18 42"/><path d="M30 40 Q38 36 42 42"/>
+        <path d="M30 52 Q22 48 18 54"/><path d="M30 52 Q38 48 42 54"/>
+        <path d="M30 64 Q22 60 18 66"/><path d="M30 64 Q38 60 42 66"/>
+        <path d="M30 76 Q22 72 18 78"/><path d="M30 76 Q38 72 42 78"/>
+        <path d="M30 22 Q26 16 24 12"/><path d="M30 22 Q34 16 36 12"/><path d="M30 22 L30 10"/>
+      </g>
+    </symbol>
+    <!-- OLIVE BRANCH -->
+    <symbol id="i-olive" viewBox="0 0 100 60">
+      <path d="M5 30 Q50 28 95 30" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      <g fill="currentColor" opacity=".7">
+        <ellipse cx="22" cy="22" rx="6" ry="3.5" transform="rotate(-30 22 22)"/>
+        <ellipse cx="22" cy="38" rx="6" ry="3.5" transform="rotate(30 22 38)"/>
+        <ellipse cx="42" cy="20" rx="6" ry="3.5" transform="rotate(-30 42 20)"/>
+        <ellipse cx="42" cy="40" rx="6" ry="3.5" transform="rotate(30 42 40)"/>
+        <ellipse cx="62" cy="22" rx="6" ry="3.5" transform="rotate(-30 62 22)"/>
+        <ellipse cx="62" cy="38" rx="6" ry="3.5" transform="rotate(30 62 38)"/>
+        <ellipse cx="82" cy="24" rx="6" ry="3.5" transform="rotate(-30 82 24)"/>
+        <ellipse cx="82" cy="36" rx="6" ry="3.5" transform="rotate(30 82 36)"/>
+      </g>
+    </symbol>
+    <!-- BOWL -->
+    <symbol id="i-bowl" viewBox="0 0 60 60">
+      <path d="M8 26 Q8 46 30 46 Q52 46 52 26 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <line x1="6" y1="26" x2="54" y2="26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M22 20 Q26 14 30 16 Q34 14 38 20" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" opacity=".5"/>
+    </symbol>
+    <!-- SPOON -->
+    <symbol id="i-spoon" viewBox="0 0 60 60">
+      <ellipse cx="30" cy="18" rx="10" ry="14" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="30" y1="32" x2="30" y2="54" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <!-- HEART -->
+    <symbol id="i-heart" viewBox="0 0 60 60">
+      <path d="M30 50 C30 50 12 38 12 24 C12 16 18 12 24 12 C28 12 30 14 30 18 C30 14 32 12 36 12 C42 12 48 16 48 24 C48 38 30 50 30 50 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+    </symbol>
+    <!-- CALENDAR -->
+    <symbol id="i-calendar" viewBox="0 0 60 60">
+      <rect x="10" y="14" width="40" height="38" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="10" y1="24" x2="50" y2="24" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="20" y1="8" x2="20" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="40" y1="8" x2="40" y2="18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="30" cy="36" r="3" fill="currentColor"/>
+    </symbol>
+    <!-- PEOPLE -->
+    <symbol id="i-people" viewBox="0 0 60 60">
+      <circle cx="20" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="40" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M10 46 Q10 34 20 34 Q30 34 30 46" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M30 46 Q30 34 40 34 Q50 34 50 46" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <!-- LIGHTBULB -->
+    <symbol id="i-bulb" viewBox="0 0 60 60">
+      <path d="M30 10 C22 10 16 16 16 24 C16 30 20 34 22 38 L22 42 L38 42 L38 38 C40 34 44 30 44 24 C44 16 38 10 30 10 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <line x1="22" y1="46" x2="38" y2="46" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="24" y1="50" x2="36" y2="50" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <!-- PLAY -->
+    <symbol id="i-play" viewBox="0 0 60 60">
+      <circle cx="30" cy="30" r="20" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M26 22 L40 30 L26 38 Z" fill="currentColor"/>
+    </symbol>
+    <!-- SUBSTACK S -->
+    <symbol id="i-substack" viewBox="0 0 60 60">
+      <rect x="14" y="14" width="32" height="4" fill="currentColor"/>
+      <rect x="14" y="24" width="32" height="4" fill="currentColor"/>
+      <path d="M14 34 L46 34 L46 50 L30 42 L14 50 Z" fill="currentColor"/>
+    </symbol>
+    <!-- SUN -->
+    <symbol id="i-sun" viewBox="0 0 60 60">
+      <circle cx="30" cy="30" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <line x1="30" y1="6" x2="30" y2="12"/><line x1="30" y1="48" x2="30" y2="54"/>
+        <line x1="6" y1="30" x2="12" y2="30"/><line x1="48" y1="30" x2="54" y2="30"/>
+        <line x1="13" y1="13" x2="17" y2="17"/><line x1="43" y1="43" x2="47" y2="47"/>
+        <line x1="13" y1="47" x2="17" y2="43"/><line x1="43" y1="17" x2="47" y2="13"/>
+      </g>
+    </symbol>
+    <!-- SEED/SPROUT -->
+    <symbol id="i-seed" viewBox="0 0 60 60">
+      <ellipse cx="30" cy="42" rx="10" ry="6" fill="currentColor" opacity=".2"/>
+      <path d="M30 42 Q30 30 30 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <path d="M30 32 Q22 26 22 20 Q22 18 24 18 Q30 18 30 28" stroke="currentColor" stroke-width="1.5" fill="currentColor" fill-opacity=".15" stroke-linejoin="round"/>
+    </symbol>
+    <!-- PLANT GROWING -->
+    <symbol id="i-plant" viewBox="0 0 60 60">
+      <ellipse cx="30" cy="48" rx="14" ry="4" fill="currentColor" opacity=".15"/>
+      <line x1="30" y1="48" x2="30" y2="20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M30 30 Q18 28 16 18 Q14 16 18 16 Q28 18 30 28" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M30 22 Q42 20 44 12 Q46 10 42 10 Q32 12 30 20" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <!-- TREE -->
+    <symbol id="i-tree" viewBox="0 0 60 60">
+      <ellipse cx="30" cy="52" rx="16" ry="3" fill="currentColor" opacity=".15"/>
+      <line x1="30" y1="52" x2="30" y2="32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="30" cy="22" r="14" fill="currentColor" fill-opacity=".2" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M22 22 Q26 18 30 22 Q34 18 38 22" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" opacity=".5"/>
+    </symbol>
+    <!-- CROSSED-OUT DIET (broken scale) -->
+    <symbol id="i-broken-scale" viewBox="0 0 100 100">
+      <rect x="20" y="50" width="60" height="30" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="50" cy="65" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="50" y1="60" x2="50" y2="58" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <line x1="14" y1="14" x2="86" y2="86" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="countdown-bar">
+  <span class="countdown-bar-label">Otevřený zápis · start září 2026 · max 10 žen</span>
+</div>
+
+<!-- LOGO BAR -->
+<div class="logo-bar">
+  <span class="logo">HEALLO<em>®</em></span>
+</div>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>Tato stránka používá nezbytné cookies pro správné fungování. <a href="https://www.myheallo.online/ochrana-osobnich-udaju/" target="_blank" rel="noopener">Více informací</a></p>
+  <button class="cookie-accept" onclick="acceptCookies()">Rozumím</button>
+</div>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="stickyBar">
+  <span class="sticky-cta-text">HEALLO® 365 · 29 000 Kč · max 10 žen</span>
+  <a href="https://form.fapi.cz/?id=47dca0dd-f6a1-4690-9926-04affa52567e" class="btn">Chci se přihlásit →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tagline">HEALLO® 365 · Roční doprovod</div>
+    <h1>Po roce se ti tělo promění. <span class="highlight">Ale ne kvůli další dietě.</span></h1>
+    <p class="hero-sub">12 měsíců, max 10 žen, start září 2026. Pro ženu, která zkusila všechno… a vrátila se, protože něco uvnitř pořád říká: tohle není ono. Dvanáct měsíců, dvanáct témat. Bez pravidel, bez kontroly, bez váhy jako soudce. Krok za krokem zpátky k sobě.</p>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring"></div>
+      <svg class="hero-photo-leaf hero-photo-leaf-1" viewBox="0 0 100 60"><use href="#i-olive"/></svg>
+      <svg class="hero-photo-leaf hero-photo-leaf-2" viewBox="0 0 100 60"><use href="#i-olive"/></svg>
+      <div class="hero-photo">
+        <img src="images/katerina-hero.jpg" alt="Kateřina" class="photo-img" onerror="this.style.display='none'">
+        <span class="photo-brief">📸 Sem patří fotka Kateřiny</span>
+        <span class="photo-desc">Portrét, přirozené světlo,<br>krémové/zlaté tóny</span>
+      </div>
+    </div>
+    <a href="https://form.fapi.cz/?id=47dca0dd-f6a1-4690-9926-04affa52567e" class="btn btn-lg">Beru si místo · 29 000 Kč →</a>
+    <p class="micro">✓ Max 10 žen ve skupině · ✓ 30 dní garance vrácení peněz · ✓ Splátky možné</p>
+  </div>
+</section>
+
+<!-- PRESS BAR… skryto. Pokud chceš mít sekci "Psali o mně", odstraň komentáře níže
+     a vyměň texty za skutečné názvy médií nebo <img src="images/logos/jmeno.svg"> tagy.
+<div class="press-bar">
+  <p class="press-label">— Psali o mně —</p>
+  <div class="press-logos">
+    <span class="press-logo">Název 1</span>
+    <span class="press-logo bold">Název 2</span>
+    <span class="press-logo">Název 3</span>
+  </div>
+</div>
+-->
+
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-grid">
+    <div class="trust-item">
+      <svg viewBox="0 0 60 60"><use href="#i-calendar"/></svg>
+      <strong>12 měsíců</strong>
+      Září 2026 — srpen 2027
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 60 60"><use href="#i-people"/></svg>
+      <strong>Max 10 žen</strong>
+      Uzavřená skupina
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 60 60"><use href="#i-heart"/></svg>
+      <strong>Somatika + IE</strong>
+      Tělo jako autorita
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 60 60"><use href="#i-bowl"/></svg>
+      <strong>30 dní garance</strong>
+      Vrácení peněz
+    </div>
+  </div>
+</div>
+
+<!-- 2. PROBLEM -->
+<section class="problem-section">
+  <div class="wrap-narrow">
+    <div class="section-head">
+      <span class="section-eyebrow">Možná to znáš</span>
+      <h2>Zkusila jsi všechno.<br>A pořád to <span class="serif-em">nesedí</span>.</h2>
+      <p style="font-size:18px;margin-top:14px">Ne kvůli dietě, kterou jsi ještě nezkusila. Ne kvůli plánu, který jsi nedotáhla. Možná… kvůli něčemu, co diety nikdy nedosáhnou.</p>
+    </div>
+    <ul class="problem-list">
+      <li>Zkusila jsi nízkokalorické. Pak keto. Pak přerušovaný půst. Pak intuitivní stravování z knihy, kterou jsi přečetla za víkend.</li>
+      <li>Občas to chvíli zabralo. Pak zase ne.</li>
+      <li>Už ani pořádně nevíš, co znamená „mít hlad".</li>
+      <li>Vážíš se každé ráno a podle čísla na váze víš, jaký bude den. Nebo se nevážíš a vyhýbáš se zrcadlu.</li>
+      <li>Když si na obědě objednáš dezert, polovinu večera počítáš, co s tím uděláš zítra.</li>
+      <li>A někde uvnitř víš, že tohle už dávno není o jídle.</li>
+    </ul>
+    <p style="font-family:'Fraunces',serif;font-style:italic;font-size:21px;color:var(--gold-dark);text-align:center;line-height:1.5;margin-top:36px;font-weight:500;max-width:560px;margin-left:auto;margin-right:auto">Tohle je kontrola, která tě stojí příliš mnoho energie. A ne… víc vůle není odpověď.</p>
+  </div>
+</section>
+
+<!-- 3. PROČ NIC NEFUNGOVALO · Gabor -->
+<section class="pilar-section bg-warm">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Pilíř první · proč</span>
+      <h2>Není to tvoje vůle.<br>Je to tvůj <span class="serif-em">nervový systém</span>.</h2>
+    </div>
+    <div class="pilar-body">
+      <p class="lead">Dietní průmysl ti říká: kdybys měla větší disciplínu, fungovalo by to.</p>
+      <p><strong>Je to lež. A je to lež, která ti drahá léta brala sílu.</strong></p>
+      <p>Tvoje tělo nemůže dlouhodobě fungovat na restrikci. Není to chyba. Je to inteligence, která tě stovky tisíc let chránila před hladem… a ta inteligence ti nikdy nedovolí, abys dlouhodobě nedávala dost.</p>
+      <p>A když se k tomu přidá to, co popisuje Gabor Maté: že jídlo často není o jídle, ale o regulaci. O tom, co si nervová soustava nikdy nedovolila cítit jinak. O kompenzaci za to, co kdysi chybělo. O hladu, který má jméno… ale není to hlad po jídle.</p>
+      <p class="pilar-closing">Pak je jasné, proč žádná dieta neměla šanci.<br>Není to chyba ve vůli. Je to moudrost v těle, která říká: tudy ne.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. JINÁ CESTA EXISTUJE · Evelyn -->
+<section class="pilar-section bg-cream">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Pilíř druhý · jak</span>
+      <h2>Intuitivní stravování není teorie.<br>Je to způsob, <span class="serif-em">jak žít</span>.</h2>
+    </div>
+    <div class="pilar-body">
+      <p>Před třiceti lety napsala americká dietoložka Evelyn Tribole knihu <em>Intuitive Eating</em>. Mohlo by to znít jako další wellness fráze… ale není.</p>
+      <p>Stojí za tím vědecky podložený přístup, dnes přes <strong>200 studií</strong> a <strong>deset jasných principů</strong>. Nepřišel od shora, ale zezdola. Od žen, které se rozhodly přestat poslouchat externí pravidla a začaly poslouchat sebe.</p>
+      <p>Jádro je jednoduché:</p>
+      <ul class="pilar-list">
+        <li>Tvoje tělo <em>ví</em>, kdy má hlad. Když mu věříš.</li>
+        <li>Tvoje tělo <em>ví</em>, kdy je syté. Když ho posloucháš.</li>
+        <li>Tvoje tělo nepotřebuje pravidla. Potřebuje pozornost.</li>
+      </ul>
+      <p>A pak je tu ta těžká část, kterou ti žádná kniha sama o sobě nedá: ta pozornost se neučí za víkend. Trvá měsíce, někdy roky, než se ti vrátí to, co ti dietní mysl vzala… schopnost cítit, co potřebuješ.</p>
+      <p class="pilar-closing">A přesně proto vznikl tenhle program.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. ROK, KTERÝ TĚ PROMĚNÍ -->
+<section class="pilar-section bg-warm">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Pilíř třetí · jak konkrétně</span>
+      <h2>12 měsíců struktury, doprovodu<br>a malých <span class="serif-em">vědomých kroků</span>.</h2>
+    </div>
+    <div class="pilar-body">
+      <p>Tohle je to, co dělá tenhle kurz jiným než kniha o intuitivním stravování. Nebo Substack článek. Nebo víkendový workshop.</p>
+      <p><strong>Každý měsíc jedno téma. Každý den jedna malá praxe.</strong> Tak dlouho, dokud se nestane samozřejmostí. Tak pomalu, dokud se neutiší dietní mysl. Tak konkrétně, dokud se ti tělo nezačne ozývat zpátky.</p>
+      <p>Žádné týdny extra úsilí, po kterých vyhoříš. Žádné „začnu od pondělí". Žádné „musím se konečně sebrat".</p>
+      <div class="pilar-highlight">
+        <strong>365 dní × 75 % úsilí</strong>
+        <p>Což je víc než sedm dní stoprocentní snahy a pak nic… a po roce na to přijdeš sama.</p>
+        <p style="margin-top:14px;font-size:13px;color:var(--gold-light);letter-spacing:1.5px;text-transform:uppercase;font-weight:700">Odtud i jméno · HEALLO® 365</p>
+      </div>
+      <p>A protože vím, že návyky samy o sobě nestačí, vrstvím přes ně to, co návyková psychologie obvykle nedělá: <strong>somatiku, polyvagální optiku, citlivost na nervovou soustavu, práci s vnitřní kritičkou.</strong> Aby každý krok nebyl jen v hlavě, ale i v těle.</p>
+      <p class="pilar-closing left"><em>Kurz vychází z mého vlastního vzdělání ve výživě a koučinku — doma i v zahraničí, v dlouhodobých výcvicích, kterými prošla i moje vlastní cesta. Proto vím, kde to bolí. A proto se umím nacítit.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. KDO JSEM -->
+<section class="about-section">
+  <div class="wrap">
+    <div class="video-wrap">
+      <div class="video-eyebrow">Než budeš číst dál · zpomal na chvíli</div>
+      <div class="video-player" data-video-id="G-JvmaP8WBI" onclick="loadVideo(this)">
+        <img class="video-poster" src="https://i.ytimg.com/vi/G-JvmaP8WBI/maxresdefault.jpg" alt="Atmosféra HEALLO®" loading="lazy" onerror="this.src='https://i.ytimg.com/vi/G-JvmaP8WBI/hqdefault.jpg'">
+        <div class="play-button">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="38" fill="rgba(255,255,255,.96)"/>
+            <path d="M33 26 L57 40 L33 54 Z" fill="#a77b00"/>
+          </svg>
+        </div>
+      </div>
+      <p class="video-caption">Bez monologu. Jen hudba a text… atmosféra HEALLO® k cítění, ne k poslouchání.</p>
+    </div>
+    <div style="max-width:720px;margin:0 auto">
+      <div class="section-head" style="text-align:left;margin-bottom:36px">
+        <span class="section-eyebrow">Kdo tě bude doprovázet</span>
+        <h2 style="text-align:left">Nejsem koučka, která si jednoho dne řekla, že ženy potřebují <span class="serif-em">jiný přístup</span>.<br>Jsem žena, která ho potřebovala sama.</h2>
+      </div>
+      <div class="about-content" style="max-width:none">
+        <p>Roky jsem zkoušela. Počítala. Řídila se pravidly, která někde napsal někdo jiný. Roky jsem věřila, že kdybych měla větší disciplínu, vyřeším to. Roky jsem nevěděla, že moje tělo není problém… jen volá po jiné pozornosti, než jsem mu dávala.</p>
+        <p>Pak jsem se vzdělala. <strong>Doma i v zahraničí.</strong> Ve výživě, koučinku, somatice, polyvagální teorii, intuitivním stravování. Prošla jsem dlouhodobými výcviky, ve kterých jsem musela pracovat se sebou stejně intenzivně jako s teorií. Bez té vnitřní práce by mi diplomy nebyly k ničemu.</p>
+        <p>A pomalu, krok za krokem, jsem se vrátila ke svému tělu. Ne jako k nepříteli. Jako k partnerce, která ví líp než moje hlava.</p>
+        <p>Z té cesty vznikl <strong>HEALLO®</strong>. A z té cesty vznikl i <strong>HEALLO® 365</strong>.</p>
+      </div>
+      <div class="deco-divider" style="margin:48px auto 32px"><svg viewBox="0 0 100 60"><use href="#i-olive"/></svg></div>
+      <div class="about-quote" style="margin:0">
+        <span class="quote-mark">"</span>Vím, kde to bolí, protože jsem si tím prošla. Vím, jak ven, protože jsem tu cestu ušla. A vím, že není rychlá ani lineární… ale je trvalá.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 7. CO DOSTANEŠ -->
+<section class="value-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="deco-divider"><svg viewBox="0 0 100 60"><use href="#i-olive"/></svg></div>
+      <span class="section-eyebrow">Co všechno je v ceně</span>
+      <h2>HEALLO® 365 není kurz,<br>který si projdeš<br>a <span class="serif-em">zapomeneš</span>.</h2>
+      <p style="font-size:17px;margin-top:14px;max-width:520px;margin-left:auto;margin-right:auto">Tohle není balíček PDF souborů, který si stáhneš a otevřeš jednou. Tohle je rok života vedle žen, které jdou stejnou cestou.</p>
+    </div>
+
+    <div class="value-grid">
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-calendar"/></svg></div>
+        <strong>12 měsíců strukturovaného doprovodu</strong>
+        <p>Od září 2026 do srpna 2027. Každý měsíc otevíráme jedno téma a postupně skládáme oblouk.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-seed"/></svg></div>
+        <strong>Denní malá praxe</strong>
+        <p>Něco konkrétního na každý den. Ne úkol. Ne povinnost. Pozvánka k pozornosti.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-people"/></svg></div>
+        <strong>Uzavřená komunita max 10 žen</strong>
+        <p>Místo, kde jsi vidět a slyšet. Žádné anonymní davy. Žádné prokliky. <strong>Tahle skupina je páteř kurzu.</strong></p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-play"/></svg></div>
+        <strong>Měsíční skupinové cally se mnou</strong>
+        <p>Společný prostor pro otázky, sdílení a somatickou práci. Online, nahrávané pro tebe, pokud se nestihneš.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-bulb"/></svg></div>
+        <strong>Materiály v psané i zvukové podobě</strong>
+        <p>Česky, v telefonu, kdykoli. Můžeš si je číst u kávy nebo poslouchat při procházce.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-heart"/></svg></div>
+        <strong>Somatické a polyvagální praxe</strong>
+        <p>Regulace nervové soustavy jako součást každého měsíce. Protože změna se neděje v hlavě.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-spoon"/></svg></div>
+        <strong>Práce s vnitřní kritičkou</strong>
+        <p>Protože dietní mysl má jméno. A já vím, jak s ní mluvit.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-bowl"/></svg></div>
+        <strong>Reflexní deník + sebezkušební praxe</strong>
+        <p>Strukturovaný, ale ne svazující. Záznamy, ke kterým se vracíš.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap"><svg viewBox="0 0 60 60"><use href="#i-tree"/></svg></div>
+        <strong>12 měsíců sdíleného času</strong>
+        <p>Materiály i komunita jsou tvoje po celou dobu kurzu. Záměrně bez „trvalého přístupu"… protože limit je to, co tě skutečně zapojí.</p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-icon-wrap" style="background:var(--gold);color:#fff"><svg viewBox="0 0 60 60"><use href="#i-sun"/></svg></div>
+        <strong>Já po celý rok v komunitě</strong>
+        <p>Čtoucí, odpovídající, držící prostor. Ne 24/7… ale přítomná.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 8. 12 MĚSÍCŮ, 12 TÉMAT -->
+<section class="journey-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="deco-divider"><svg viewBox="0 0 60 60"><use href="#i-bowl"/></svg></div>
+      <span class="section-eyebrow">Mapa roku</span>
+      <h2>Od těla<br>k jídlu k <span class="serif-em">životu</span>.</h2>
+      <p style="font-size:17px;margin-top:14px;max-width:540px;margin-left:auto;margin-right:auto">Není to jízdní řád. Je to oblouk. Každý měsíc otevíráme jednu vrstvu, na které potom stavíme dál.</p>
+    </div>
+
+    <div class="journey-grid">
+      <div class="journey-month highlight">
+        <span class="month-num">01</span>
+        <span class="month-label">Září 2026</span>
+        <span class="month-title">Návrat do těla</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">02</span>
+        <span class="month-label">Říjen</span>
+        <span class="month-title">Hlad a sytost</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">03</span>
+        <span class="month-label">Listopad</span>
+        <span class="month-title">Vnitřní kritička</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">04</span>
+        <span class="month-label">Prosinec</span>
+        <span class="month-title">Jídlo bez morálky</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">05</span>
+        <span class="month-label">Leden</span>
+        <span class="month-title">Výživa bez ideologie</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">06</span>
+        <span class="month-label">Únor</span>
+        <span class="month-title">Tělo jako autorita</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">07</span>
+        <span class="month-label">Březen</span>
+        <span class="month-title">Emoce a jídlo</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">08</span>
+        <span class="month-label">Duben</span>
+        <span class="month-title">Pohyb bez ničení</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">09</span>
+        <span class="month-label">Květen</span>
+        <span class="month-title">Spánek a cyklus</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">10</span>
+        <span class="month-label">Červen</span>
+        <span class="month-title">Body image</span>
+      </div>
+      <div class="journey-month">
+        <span class="month-num">11</span>
+        <span class="month-label">Červenec</span>
+        <span class="month-title">Hranice a vztahy</span>
+      </div>
+      <div class="journey-month highlight">
+        <span class="month-num">12</span>
+        <span class="month-label">Srpen 2027</span>
+        <span class="month-title">Co dál</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. KOMUNITA -->
+<section class="komunita-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Nejsi v tom sama</span>
+      <h2>Komunita žen,<br>které jdou cestou <span class="serif-em">s tebou</span>.</h2>
+    </div>
+    <div class="komunita-body">
+      <p>Tahle skupina je uzavřená. <strong>Maximálně deset žen.</strong> Ne víc.</p>
+      <p>Není to FB skupina, kde se ztratí vlákno. Není to Discord, kde po týdnu nikdo nečte. Je to prostor, který spravuju, hlídám, čistím… aby v něm bylo bezpečno.</p>
+      <p>Ženy v ní se znají. Vidí se v měsíčních callech. Píší si mezi sebou v období mezi cally. A na konci roku z toho většinou není jen „kohorta z kurzu"… je to prostor přátelství, který drží i po skončení programu.</p>
+      <ul class="komunita-list">
+        <span class="komunita-list-title">Proč to dělám tak malou skupinu:</span>
+        <li>Aby se každá žena vešla. Jménem i příběhem.</li>
+        <li>Aby se nestalo, že tě někdo přehlédne.</li>
+        <li>Aby měl každý měsíční call prostor pro každou z vás.</li>
+        <li>Aby ses nestyděla říct to, co se říct stydíš.</li>
+      </ul>
+      <p>Hodně žen, které prošly mým krátkým programem, mi říkalo: nejsilnější bylo to, že jsme byly spolu. Že někdo viděl, jak to vypadá zevnitř. Že někdo věděl.</p>
+      <p class="pilar-closing" style="border-top:1px solid var(--gold-light);padding-top:24px;margin-top:24px">Tahle skupina není bonus.<br>Je to páteř kurzu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10. TĚLO SE PROMĚNÍ -->
+<section class="body-section">
+  <div class="section-head">
+    <span class="section-eyebrow">Jak měříme změnu</span>
+    <h2>Tělo se promění.<br>Ale jako <span class="serif-em">důsledek</span>, ne jako cíl.</h2>
+  </div>
+  <div class="body-inner">
+    <p>Buďme upřímné.</p>
+    <p>Většina žen, které čtou tenhle text, někde uvnitř pořád doufá, že zhubne. Že to bude vedlejší efekt. Že po roce budou vypadat jinak.</p>
+    <p>A já ti nebudu lhát… někdy se to stane. Někdy se tělo promění viditelně. Někdy se promění jenom vztah k němu. Záleží na tom, kde tvoje tělo startuje, co potřebuje, a co se v něm během roku rozhodne udělat.</p>
+    <p>Jenom… ani v jednom případě to nebude <em class="body-em">cíl</em>. Bude to <em class="body-em">důsledek</em>.</p>
+    <p>Cíl je úplně jinde. Cíl je, že přestaneš s tělem bojovat. Že přestaneš počítat. Že si konečně sedneš k jídlu a víš, že je to v pořádku. Že jdeš spát a v hlavě ti neběží seznam toho, co jsi snědla.</p>
+    <p>To, jak se tělo proměňuje, je vedlejší efekt toho, že konečně dostává, co potřebuje. <strong>Klid. Pozornost. Respekt. Pravidelnost. Důvěru.</strong></p>
+    <p class="body-strong">Tady se nic neměří povinně.</p>
+    <p>Vážit se můžeš. Vyfotit se můžeš. Změřit obvody si můžeš. Ale jen tehdy, když to <em class="body-em">ty sama</em> chceš — a jen tehdy, když cítíš, že ti to pomáhá. Ne podle rozvrhu. Ne na rozkaz. Ne každé ráno, ne každý měsíc.</p>
+    <p>Váha, fotky, čísla… to nejsou nepřátelé. Nepřítel je váha jako <em class="body-em">soudce</em>, který ti určuje den. Fotka jako <em class="body-em">důkaz</em>, jestli si vůbec zasloužíš sebepřijetí. Centimetr jako <em class="body-em">termín splnění</em>.</p>
+    <p>Jakmile si vezmeš zpátky volbu <em class="body-em">kdy</em>, <em class="body-em">proč</em> a <em class="body-em">jestli vůbec</em> — ty staré nástroje ztratí svou moc.</p>
+    <p style="text-align:center;font-size:15px;color:var(--ink-mute);margin:32px 0 20px">A vedle toho sledujeme i jiné věci. Markery, na které ti dietní průmysl nikdy neukázal:</p>
+    <ul class="body-markers">
+      <li>kolik máš energie</li>
+      <li>jak spíš</li>
+      <li>jestli se ti dnes podařilo se naobědvat klidně</li>
+      <li>jestli se ti dnes podařilo nesabotovat svačinou</li>
+      <li>jak se cítíš, když se sprchuješ</li>
+      <li>jak se cítíš, když si oblékáš oblečení</li>
+    </ul>
+    <p>Z nich se nedá vyrobit číslo. Ale jsou to přesně ty markery, podle kterých poznáš, jestli se vracíš k sobě.</p>
+    <p class="pilar-closing">Jen o váze není život.<br>A tohle je program o životě.</p>
+  </div>
+</section>
+
+<!-- 11. PRO KOHO JE A NENÍ -->
+<section class="forwhom-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Než se rozhodneš</span>
+      <h2>Pro koho je to…<br>a pro koho <span class="serif-em">ne</span></h2>
+    </div>
+    <div class="forwhom-grid">
+      <div class="forwhom-card yes">
+        <div class="forwhom-icon"><svg viewBox="0 0 60 60"><use href="#i-heart"/></svg></div>
+        <h3>Tenhle rok je pro tebe, pokud…</h3>
+        <ul>
+          <li>Jsi unavená z diet, restrikcí a počítání. Hledáš jiný způsob života kolem jídla, ne jiný plán.</li>
+          <li>Cítíš, že tvůj vztah k jídlu a k tělu má hlubší kořeny než kalorie. A jsi otevřená je hledat.</li>
+          <li>Chceš pomalý, postupný proces. Víš, že rok zní dlouho, ale chápeš, že trvalá změna potřebuje čas.</li>
+          <li>Chceš být v malé skupině žen, které jdou cestou s tebou.</li>
+          <li>Chceš se naučit slyšet vlastní tělo, místo někoho jiného, kdo ti řekne, co máš jíst.</li>
+        </ul>
+      </div>
+      <div class="forwhom-card no">
+        <div class="forwhom-icon"><svg viewBox="0 0 60 60"><use href="#i-broken-scale"/></svg></div>
+        <h3>Tenhle rok pro tebe není, pokud…</h3>
+        <ul>
+          <li>Hledáš rychlou změnu, jasné kalorické tabulky, nebo „konečně dobře nastavený plán".</li>
+          <li>Chceš pracovat s konkrétními kilogramy jako s cílem. Tady na sebe v tomhle smyslu sahat nebudeš.</li>
+          <li>Aktuálně procházíš diagnostikovanou poruchou příjmu potravy, která potřebuje specializovanou klinickou péči.</li>
+          <li>Hledáš jen materiály k samostudiu. Tahle skupina není kniha. Je to vztahová cesta.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. TVÁ CESTA -->
+<section class="path-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="deco-divider"><svg viewBox="0 0 60 60"><use href="#i-seed"/></svg></div>
+      <span class="section-eyebrow">Co se stane, když se přihlásíš</span>
+      <h2>Cesta od kliknutí<br>k <span class="serif-em">prvnímu měsíci</span>.</h2>
+    </div>
+    <div class="path-grid" style="grid-template-columns:1fr;max-width:680px">
+      <div class="path-card" style="text-align:left;display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:center">
+        <span class="path-num" style="position:static;font-size:36px;opacity:1">01</span>
+        <div>
+          <h3 style="margin-bottom:6px">Vyplníš krátkou přihlášku</h3>
+          <p>Pár otázek, ať vím, kdo jsi a co tě sem přivedlo. Není to test. Je to první rozhovor.</p>
+        </div>
+      </div>
+      <div class="path-card" style="text-align:left;display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:center">
+        <span class="path-num" style="position:static;font-size:36px;opacity:1">02</span>
+        <div>
+          <h3 style="margin-bottom:6px">Domluvíme si seznamovací hovor</h3>
+          <p>30 minut online, abychom si obě potvrdily, že tahle skupina je pro tebe. Bez tlaku. Bez prodejního skriptu.</p>
+        </div>
+      </div>
+      <div class="path-card" style="text-align:left;display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:center">
+        <span class="path-num" style="position:static;font-size:36px;opacity:1">03</span>
+        <div>
+          <h3 style="margin-bottom:6px">Potvrdíš si místo platbou</h3>
+          <p>Najednou nebo na splátky… jak to vyhovuje tobě.</p>
+        </div>
+      </div>
+      <div class="path-card" style="text-align:left;display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:center">
+        <span class="path-num" style="position:static;font-size:36px;opacity:1">04</span>
+        <div>
+          <h3 style="margin-bottom:6px">Dostaneš přístup k přípravným materiálům</h3>
+          <p>Pár týdnů před startem ti pošlu úvodní texty a audio, abychom zacíli rok v klidu.</p>
+        </div>
+      </div>
+      <div class="path-card" style="text-align:left;display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:center;background:linear-gradient(135deg,#fff,var(--gold-bg));border-color:var(--gold-light)">
+        <span class="path-num" style="position:static;font-size:36px;opacity:1">05</span>
+        <div>
+          <h3 style="margin-bottom:6px">V září 2026 začínáme</h3>
+          <p>První skupinový call. První měsíční téma. První denní praxe. A jdeme spolu rok.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 13. PRAKTICKÉ INFORMACE -->
+<section class="practical-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Praktické informace</span>
+      <h2>Vše, co potřebuješ <span class="serif-em">vědět</span>.</h2>
+    </div>
+
+    <div class="practical-grid">
+      <div class="practical-card featured">
+        <span class="practical-num small">09/26</span>
+        <strong>Start programu</strong>
+        <p>Společný start celé skupiny v září 2026. Trvání 12 měsíců, do srpna 2027.</p>
+      </div>
+
+      <div class="practical-card">
+        <span class="practical-num">10</span>
+        <strong>žen ve skupině</strong>
+        <p>Záměrně malý počet. Pro skutečný prostor a bezpečí pro každou z vás.</p>
+      </div>
+
+      <div class="practical-card">
+        <span class="practical-num small">90 min</span>
+        <strong>Měsíční skupinový call</strong>
+        <p>1× měsíčně, vždy večer. Nahrávané pro tebe, pokud se nestihneš.</p>
+      </div>
+
+      <div class="practical-card">
+        <span class="practical-num small">30–60</span>
+        <strong>minut týdně</strong>
+        <p>Časová investice. Praxe je krátká, ale denní. Materiály si pouštíš při procházce nebo v autě.</p>
+      </div>
+
+      <div class="practical-card">
+        <span class="practical-num small">📱</span>
+        <strong>Plně online</strong>
+        <p>Materiály, cally, komunita — vše v telefonu nebo počítači. Žádné cestování.</p>
+      </div>
+
+      <div class="practical-card">
+        <span class="practical-num small">CZ</span>
+        <strong>Čeština</strong>
+        <p>Všechny materiály i cally v češtině. Bez překladů, bez zprostředkování.</p>
+      </div>
+
+      <div class="practical-card">
+        <span class="practical-num small">12</span>
+        <strong>měsíců přístupu</strong>
+        <p>K materiálům po dobu kurzu. Záměrně bez trvalého přístupu… limit pomáhá tě skutečně zapojit.</p>
+      </div>
+
+      <div class="practical-card">
+        <span class="practical-num small">🌿</span>
+        <strong>Po roce</strong>
+        <p>Pokud chceš pokračovat, otevírám menší navazující skupiny pro absolventky.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14. CENA A ZÁRUKA -->
+<section class="pricing-section" id="cena">
+  <div class="pricing-inner">
+    <span class="section-eyebrow">Investice</span>
+    <h2>29 000 Kč<br>za rok cesty <span class="serif-em">zpátky k sobě</span>.</h2>
+    <p style="font-size:17px;margin-top:12px">12 měsíců doprovodu. Komunita celý rok. Možnost splátek.</p>
+
+    <div class="pricing-card">
+      <img src="images/decorations/camomille-1.png" alt="" class="card-herb">
+      <span class="save-badge">Max 10 žen · start září 2026</span>
+      <p class="price-now" style="font-size:64px">29 000 Kč</p>
+      <p class="price-label">jednorázově · HEALLO® 365</p>
+      <p style="font-size:15px;color:var(--ink-soft);margin:8px 0 24px">nebo <strong>6 splátek po 4 900 Kč</strong></p>
+      <a href="https://form.fapi.cz/?id=47dca0dd-f6a1-4690-9926-04affa52567e" class="btn btn-lg" style="width:100%">Beru si místo v zářijové kohortě →</a>
+      <p class="price-note">Start 1. září 2026 · 12 měsíců do srpna 2027 · max 10 žen v kohortě.</p>
+    </div>
+
+    <p><a href="https://instagram.com/myheallo" target="_blank" rel="noopener" class="btn-link">Mám otázky, napiš mi na Instagramu →</a></p>
+
+    <div class="guarantee">
+      <div class="guarantee-shield">
+        <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 4 L72 16 L72 46 Q72 70 40 86 Q8 70 8 46 L8 16 Z" fill="#a77b00" stroke="#8a6500" stroke-width="2"/>
+          <text x="40" y="46" text-anchor="middle" font-family="Inter" font-weight="900" font-size="20" fill="#fff">30</text>
+          <text x="40" y="62" text-anchor="middle" font-family="Inter" font-weight="700" font-size="9" fill="#fff" letter-spacing="1">DNÍ</text>
+        </svg>
+      </div>
+      <h3>Záruka prvního měsíce.</h3>
+      <p>Pokud po 30 dnech od startu zjistíš, že tahle cesta není pro tebe, vracím ti peníze. Bez otázek, bez výmluv. Protože nechci ve skupině nikoho, kdo tam nemá být.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 15. CO ŘÍKAJÍ ŽENY -->
+<section class="ref-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Co říkají ženy, které tudy prošly</span>
+      <h2>Pomalejší,<br>ale <span class="serif-em">trvalejší</span>.</h2>
+    </div>
+    <div class="ref-grid">
+      <div class="ref-card">
+        <div class="ref-header">
+          <div class="ref-avatar">Ž</div>
+          <div>
+            <div class="ref-name">Žena z programu HEALLO®<span class="anon">absolventka · anonymně</span></div>
+            <div class="stars" style="color:var(--star)">★★★★★</div>
+          </div>
+        </div>
+        <p class="ref-quote">Díky tomu se hrabu v hlavě. Nutí mě to přemýšlet. Vím, že je to pomalejší proces… ale za to trvalejší.</p>
+        <p class="ref-story">Tahle citace je jen jedna z mnoha, které mi ženy poslaly. Vystihuje to ale nejvíc: tahle cesta není zkratka. Ale je to cesta, ze které se nevracíš zpátky tam, kde jsi byla.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 16. FAQ -->
+<section class="faq-section">
+  <div class="wrap-narrow">
+    <div class="section-head">
+      <span class="section-eyebrow">Možná tě napadá</span>
+      <h2>Otázky, na které se ženy<br>ptají <span class="serif-em">nejčastěji</span>.</h2>
+    </div>
+    <div class="faq-container">
+      <details class="faq-item">
+        <summary>Co když nestihnu skupinový call?</summary>
+        <p>Cally nahráváme. Sledování v záznamu funguje, sdílení v komunitě probíhá zvlášť… takže o nic nepřijdeš.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Musím se v komunitě otevřít před cizími ženami?</summary>
+        <p>Ne. Žádné sdílení není povinné. Můžeš celý rok jen poslouchat a pracovat sama se sebou. Bezpečí ve skupině je první pravidlo.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Co když po měsíci zjistím, že to není pro mě?</summary>
+        <p>Máš garanci vrácení peněz prvních 30 dní. Bez otázek.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Co když mám diagnostikovanou poruchu příjmu potravy?</summary>
+        <p>Pak tě poprosím o seznamovací hovor, ať společně zjistíme, jestli je tenhle kurz pro tebe vhodný teď, nebo jestli potřebuješ jiný typ péče. Tvoje bezpečí je důležitější než moje místo ve skupině.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Mám hodně práce. Stihnu to?</summary>
+        <p>Denní praxe je krátká, 5 až 10 minut. Skupinový call je 1× měsíčně. Materiály si pouštíš na procházce, v autě, při vaření. Není to další zátěž… je to návrat k sobě.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Nikdy jsem nedělala somatiku ani intuitivní stravování. Není to pro mě moc?</summary>
+        <p>Naopak. Začínáme od základu. Tenhle kurz nepředpokládá žádné znalosti. Většina žen sem přichází právě poprvé.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Můžu se přihlásit s kamarádkou?</summary>
+        <p>Ano. Z mojí zkušenosti je ale lepší, když každá z vás je ve své vlastní skupině. Dynamika přátelství někdy ucpává otevřenost.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Co se stane po roce?</summary>
+        <p>Přístup k materiálům a komunitě končí spolu s kurzem… záměrně. Z mojí zkušenosti se k „trvale dostupným" materiálům ženy už nikdy nevrátí — limit pomáhá tě skutečně zapojit během toho roku, kdy se to počítá. Po skončení si odnášíš to nejdůležitější: změnu, která je v tobě, ne v PDF souboru. A pokud chceš pokračovat, otevírám menší navazující skupiny pro absolventky.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Proč 29 000 Kč?</summary>
+        <p>Protože je to roční živý doprovod s malou skupinou a osobní přítomností. Měsíčně to vychází na zhruba 2 400 Kč. Nebo lze rozdělit na 6 splátek po 4 900 Kč.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ALTERNATIVES -->
+<section class="alt-section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-eyebrow">Pokud 365 není pro tebe</span>
+      <h2>Existují jiné <span class="serif-em">cesty</span>.</h2>
+      <p style="font-size:17px;margin-top:14px;max-width:540px;margin-left:auto;margin-right:auto">Ne každá žena potřebuje roční doprovod. Ne každá teď. Tady jsou tři další dveře, které jsou ti otevřené.</p>
+    </div>
+
+    <div class="alt-grid">
+      <a href="https://cela.myheallo.cc" class="alt-card">
+        <span class="alt-arrow">↗</span>
+        <span class="alt-tag">1:1 individuální</span>
+        <h3>CELÁ</h3>
+        <p>Pokud chceš jen mě, beze skupiny. Tři měsíce 1:1 doprovodu, šest setkání. Pro ženu, která potřebuje hloubku víc než kohortu.</p>
+        <span class="alt-meta">3 měsíce · 1:1 · 18 000 Kč</span>
+      </a>
+
+      <a href="https://jednosousto.myheallo.cc" class="alt-card">
+        <span class="alt-arrow">↗</span>
+        <span class="alt-tag">Skupina · 12 měsíců</span>
+        <h3>Jedno sousto</h3>
+        <p>Pokud chceš dostupnější skupinovou cestu. 12 setkání intuitivního stravování, komunita po celou dobu, start 1. července 2026.</p>
+        <span class="alt-meta">12 měsíců · max 10 žen · 1 490 Kč</span>
+      </a>
+
+      <a href="https://odkateriny.substack.com" class="alt-card">
+        <span class="alt-arrow">↗</span>
+        <span class="alt-tag">Substack</span>
+        <h3>Od Kateřiny</h3>
+        <p>Pokud teď nehledáš spolupráci, jen čtení… moje texty jsou každý týden tady. Začni tichem na stránce, ne závazkem.</p>
+        <span class="alt-meta">každý týden · odkateriny.substack.com</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 17. TVÉ ROZHODNUTÍ -->
+<section class="final-cta">
+  <div style="max-width:680px;margin:0 auto">
+    <span class="section-eyebrow">Tvé rozhodnutí</span>
+    <h2>Začni tam, kde jsi.<br>S tím, co máš.<br>Udělej to, <span class="serif-em">co můžeš</span>.</h2>
+    <p class="lead">Tahle stránka tě nemá přesvědčit. Pokud jsi došla až sem, něco tě sem dovedlo. Možná únava. Možná touha. Možná jen tušení, že tohle čteš podruhé, protože ono <em>„to"</em> tě nepřestává oslovovat.</p>
+    <p class="lead" style="font-family:'Fraunces',serif;font-style:italic;font-size:22px;font-weight:500;margin-bottom:36px">Tělo to ví, ještě než to ví hlava.</p>
+    <a href="https://form.fapi.cz/?id=47dca0dd-f6a1-4690-9926-04affa52567e" class="btn btn-lg">Chci se přihlásit · 29 000 Kč →</a>
+    <p class="micro">Start 1. září 2026 · Max 10 žen · 30 dní garance vrácení peněz</p>
+  </div>
+</section>
+
+<footer class="footer-pro">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <p class="footer-brand">HEALLO<em>®</em></p>
+      <p class="footer-tagline"><strong>HEALLO® 365</strong> — roční doprovod pro ženy zpátky k jejich tělu.<br>12 měsíců · max 10 žen · start září 2026.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-label">Navigace</p>
+      <a href="#cena">Cena a přihlášení</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-label">Spojení</p>
+      <a href="https://instagram.com/myheallo" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://odkateriny.substack.com" target="_blank" rel="noopener">Substack</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-label">Právní</p>
+      <a href="https://www.myheallo.online/ochrana-osobnich-udaju/" target="_blank" rel="noopener">Ochrana údajů</a>
+      <a href="https://www.myheallo.online/obchodni-podminky-osvc/" target="_blank" rel="noopener">Obchodní podmínky</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Kateřina · HEALLO®</p>
+    <div class="footer-legal">
+      <a href="mailto:katerina@myheallo.info">katerina@myheallo.info</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Cookie banner
+function acceptCookies(){
+  document.getElementById('cookieBanner').classList.add('hidden');
+  try{localStorage.setItem('cookies-accepted','1')}catch(e){}
+}
+(function(){
+  try{
+    if(localStorage.getItem('cookies-accepted')==='1'){
+      document.getElementById('cookieBanner').classList.add('hidden');
+    }
+  }catch(e){}
+})();
+
+// Sticky CTA
+(function(){
+  var bar=document.getElementById('stickyBar');
+  var hero=document.querySelector('.hero');
+  if(!bar||!hero)return;
+  window.addEventListener('scroll',function(){
+    var trigger=hero.offsetTop+hero.offsetHeight-100;
+    if(window.scrollY>trigger){bar.classList.add('visible')}
+    else{bar.classList.remove('visible')}
+  },{passive:true});
+})();
+
+// Lazy YouTube embed
+function loadVideo(el){
+  var id=el.getAttribute('data-video-id');
+  if(!id)return;
+  el.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&modestbranding=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="HEALLO® video"></iframe>';
+}
+
+</script>
+
+</body></html>
